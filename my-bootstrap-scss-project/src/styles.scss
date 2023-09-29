@@ -1,0 +1,43 @@
+
+
+@import '_variables.scss'; //override des variables ici
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import './elements/homeLogo.scss';
+@import './elements/offersTitle.scss';
+@import './elements/movingLines.scss';
+@import './elements/footerDiv.scss';
+@import './elements/topBtn.scss';
+
+/*
+* {
+    border: 1px solid red; //Debug line
+}
+*/
+
+body {
+    background: $background-color;
+    
+    h1, h2 {
+        font-family: 'Karma', serif;
+    }
+    
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .top-n5 {
+        top: -10px;
+    }
+
+    .form-control {
+        background-color: #E8F0FE;
+    }
+}
+
+@keyframes move {
+    30% { transform: translateY(10px) translateX(-7px); }
+    80% { transform: translateY(-10px) translateX(7px); }
+}

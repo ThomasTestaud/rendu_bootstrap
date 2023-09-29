@@ -1,0 +1,70 @@
+@import '../_variables.scss';
+
+.offer-logo {
+    height: 90px;
+    width: 850px;
+    margin: auto;
+    position: relative;
+    animation: move 20s infinite;
+
+    h2 {
+        top: 23px;
+        left: 110px;
+        font-weight: 700;
+        position: absolute;
+        transition: left 1.3s 0.3s;
+    }
+
+    div:nth-child(2) {
+        left: 20px;
+        top: 15px;
+        width: 72px;
+        height: 61px;
+        flex-shrink: 0;
+        border-radius: 30px 20px 50px 30px;
+        background: $secondary-color;
+        position: absolute;
+        transition: left 1s 0.1s;
+    }
+    
+    div:nth-child(1) {
+        top: 0;
+        width: 297px;
+        height: 89px;
+        flex-shrink: 0;
+        border-radius: 40px 60px 60px 60px;
+        background: $base-color;
+        position: absolute;
+    }
+}
+
+.offer-logo:hover {
+    h2 {
+        left: 210px;
+        transition: left 0.5s;
+    }
+    div:nth-child(2) {
+        left: 120px;
+        transition: left 0.7s;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .offer-logo {
+        width: 300px;
+    
+        h2 {
+            top: 5px;
+            left: 20px;
+        }
+    }
+    .offer-logo:hover {
+        h2 {
+            left: 20px;
+        }
+        div:nth-child(2) {
+            left: 210px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+
+.moving-lines {
+    width: 200vw;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 15%;
+    top: 20%;
+
+    .line-parent {
+        border: 1px solid rgba(0,0,0,0);
+    }
+
+    .line {
+        border: 1px solid black;
+        margin: 2rem;
+        transition: margin 1.5s 0.3s;
+    }
+
+    .line-parent:hover .line {
+        margin: 5rem;
+    }
+}
+
+.sec {
+    left: -60%;
+    top: -45%;
+}

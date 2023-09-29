@@ -1,0 +1,38 @@
+/* Colors */
+$primary: #7749F8;
+$dark : #54595E;
+/* Fonts */
+$font-family-base: Inter, sans-serif;
+$font-size-base: 1.1rem;
+$h1-font-size: $font-size-base * 3.2 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$headings-font-weight: 700 !default;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import './overrides/btn-primary';
+@import './overrides/table';
+
+/*
+* {
+    border: 1px solid red; //Debug line
+}
+*/
+html {
+    h3 {
+        color: black;
+    }
+    
+    .bg-light {
+        background-color: white !important; //Désole mais ça marche pas sans le !important
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+    }
+}

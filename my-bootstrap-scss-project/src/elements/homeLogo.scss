@@ -1,0 +1,100 @@
+@import '../_variables.scss';
+
+.home-logo {
+    height: 230px;
+    width: 647px;
+    margin: auto;
+    position: relative;
+    
+    h1, p {
+        animation: move 30s infinite;
+    }
+    
+    h1 {
+        top: 80px;
+        left: 50px;
+        width: 700px;
+        text-align: left;
+        position: absolute;
+        transition: top 0.7s 0.2s;
+    }
+
+    p {
+        top: 120px;
+        right: -30px;
+        font-family: 'Karma', serif;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        transition: opacity 0.5s, right 0.7s;
+        opacity: 0;
+    }
+    
+    div:nth-child(1) {
+        left: 200px;
+        top: 105px;
+        width: 106px;
+        height: 93px;
+        flex-shrink: 0;
+        border-radius: 30px 20px 50px 30px;
+        background: $secondary-color;
+        position: absolute;
+        animation: move 20s infinite;
+    }
+    
+    div:nth-child(2) {
+        top: 0;
+        width: 245px;
+        height: 228px;
+        flex-shrink: 0;
+        border-radius: 40px 70px 40px 100px;
+        background: $base-color;
+        position: absolute;
+        animation: move 15s infinite;
+    }
+    
+}
+.home-logo:hover {
+    h1 {
+        top: 60px;
+        transition: top 0.3s;
+    }
+    p {
+        opacity: 1;
+        right: 0px;
+        transition: opacity 0.4s 0.2s, right 0.4s 0.2s;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-logo {
+        width: 360px;
+        
+        h1 {
+            width: 360px;
+            font-size: 40px;
+            max-width: 300px;
+            top: 60px;
+            text-align: center;
+        }
+    
+        
+        div:nth-child(1) {
+            left: 200px;
+        }
+        
+        div:nth-child(2) {
+            left:10px;
+        }
+        
+    }
+    .home-logo:hover {
+        h1 {
+            top: 25px;
+        }
+        p {
+            right: 30px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+
+footer {
+    p {
+        font-family: 'Karma', serif;
+        font-size: 20px;
+        font-style: bold;
+        text-decoration: underline;
+        position: relative;
+        top: 10px;
+    }
+
+    .white-div {
+        width: 58px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 30px 20px 50px 30px;
+        background: $secondary-color;
+    }
+
+    .red-div {
+        width: 106px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 40px 60px 60px 60px;
+        background: $base-color;
+    }
+}
